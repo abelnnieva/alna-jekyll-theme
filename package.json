@@ -1,0 +1,29 @@
+{
+  "name": "alna-jekyll-theme",
+  "version": "0.1.0",
+  "description": "Abel Nieva Jekyll theme built with inuitcss",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abel-nieva/alna-jekyll-theme.git"
+  },
+  "keywords": [
+    "inuitcss"
+  ],
+  "author": {
+    "name": "Abel Nieva",
+    "email": "abel@abelnieva.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abel-nieva/alna-jekyll-theme/issues"
+  },
+  "homepage": "https://github.com/abel-nieva/alna-jekyll-theme#readme",
+  "dependencies": {
+    "inuitcss": "^6.0.0-beta.4"
+  }
+}
