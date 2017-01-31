@@ -19,16 +19,16 @@ let parsed = JSON.parse(fs.readFileSync('./package.json'));
 let siteRoot = '_site';
 
 let banner = (
-  `/*! abelnieva.com | <%= pkg.author.name %> (c) ${new Date().getFullYear()} */\n`
+  `/*! abelnieva.com | <%= author.name %> (c) ${new Date().getFullYear()} */\n`
 );
 
 let paths = {
   scripts: '_scripts/*.js',
   sass: {
-    watch: '_sass/*.scss',
+    watch: ['_sass/*.scss', '_sass/*/*.scss'],
     dist: '_sass/main.scss'
   },
-  markup: ['*.html', '*.md'],
+  markup: ['*.html', '*/*.html', '*.md', '*/*.md'],
   dist: 'assets/'
 };
 
@@ -51,12 +51,12 @@ gulp.task('sass', () => {
     .pipe(autoprefixer())
     //.pipe(cleanCss())
     .pipe(strip({all: true}))
-    .pipe(header(banner, {pkg: parsed}))
+    .pipe(header(banner, parsed))
     .pipe(gulp.dest(paths.dist + 'css'));
 });
 
 gulp.task('jekyll', (done) => {
-  child.spawn('jekyll', ['build'], {stdio: 'inherit'})
+  child.spawn(process.platform == 'win32' ? 'jekyll.bat' : 'jekyll', ['build'], {stdio: 'inherit'})
     .on('close', done);
 });
 

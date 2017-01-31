@@ -21,6 +21,7 @@
  * Config...............Project-level configuration and feature switches.
  * Core.................inuitcss’ core and setup settings.
  * Global...............Project-wide variables and settings.
+ * Colors...............Manage our color palette in isolation.
  *
  * TOOLS
  * Rem..................Tools for converting pixel inputs into their rem
@@ -29,6 +30,7 @@
  * Clearfix.............Micro clearfix mixin.
  * Hidden...............Mixin for hiding elements.
  * Sass MQ..............inuitcss’ default media query manager.
+ * Aliases..............Aliases onto longer inuitcss variables and mixins.
  *
  * GENERIC
  * Box-sizing...........Better default `box-sizing`.
@@ -63,6 +65,7 @@
  * COMPONENTS
  * Buttons..............An example button component, and how it fits into the
  *                      inuitcss framework.
+ * Site-nav.............Site’s main nav area.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -78,6 +81,7 @@
 // @import "settings/example.settings.config";
 @import "../node_modules/inuitcss/settings/settings.core";
 // @import "settings/example.settings.global";
+@import "settings/settings.colors";
 
 
 
@@ -89,6 +93,7 @@
 @import "../node_modules/inuitcss/tools/tools.clearfix";
 @import "../node_modules/inuitcss/tools/tools.hidden";
 @import "../node_modules/sass-mq/mq";
+@import "tools/tools.aliases";
 
 
 
@@ -117,7 +122,9 @@
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
-// @import "../node_modules/inuitcss/objects/objects.wrapper";
+
+$inuit-wrapper-width: 800px;
+@import "../node_modules/inuitcss/objects/objects.wrapper";
 // @import "../node_modules/inuitcss/objects/objects.layout";
 // @import "../node_modules/inuitcss/objects/objects.media";
 // @import "../node_modules/inuitcss/objects/objects.flag";
@@ -128,7 +135,7 @@
 // @import "../node_modules/inuitcss/objects/objects.ratio";
 // @import "../node_modules/inuitcss/objects/objects.crop";
 // @import "../node_modules/inuitcss/objects/objects.tables";
-// @import "../node_modules/inuitcss/objects/objects.pack";
+@import "../node_modules/inuitcss/objects/objects.pack";
 
 
 
@@ -138,6 +145,7 @@
 //
 // Build and include your project’s UI Compoments here.
 // @import "components/example.components.buttons";
+@import "components/components.site-nav";
 
 
 
