@@ -4,13 +4,15 @@
 
 // Color palette
 
-$color-charcoal: #2e3c54;
-$color-white:    #fff;
+$color-charcoal:      #2e3c54;
+$color-slate-blue:    #6a67ce;
+$color-white:         #fff;
 
 
 
 
 // Site nav
 
-$color-site-nav-background:   $color-charcoal;
-$color-site-nav-link:         $color-white;
+$color-site-nav-background:         $color-charcoal;
+$color-site-nav-link:               $color-white;
+$color-site-nav-link-background:    hsla(0,0%,100%,.18);

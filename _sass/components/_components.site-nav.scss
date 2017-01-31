@@ -32,11 +32,14 @@
 
 
       .site-nav__link {
-        @include font-size(14px, false);
         color: $color-site-nav-link;
         display: block;
         letter-spacing: 3px;
-        padding: $unit-small 0;
-        text-decoration: none;
+        padding: $unit 0;
         text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+          background: $color-site-nav-link-background;
+        }
       }

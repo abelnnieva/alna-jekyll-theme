@@ -40,7 +40,7 @@ gulp.task('scripts', () => {
     .pipe(babel())
     .pipe(concat('bundle.min.js'))
     .pipe(uglify())
-    .pipe(header(banner, {pkg: parsed}))
+    .pipe(header(banner, parsed))
     .pipe(gulp.dest(paths.dist + 'js'));
 });
 
