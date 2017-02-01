@@ -6,37 +6,36 @@
  * The site-nav component simply displays a list of items in one line.
  */
 
-.site-nav {
+.c-site-nav {
   background: $color-site-nav-background;
 }
 
 
-  /**
-   * 1. Extend pack object to obtain a fluid width.
-   */
-
-  .site-nav__list {
-    @extend .o-pack; /* [1] */
+  .c-site-nav__list {
     margin-bottom: 0;
   }
 
 
-    /**
-     * 1. Extend pack object to obtain a fluid width.
-     */
-
-    .site-nav__item {
-      @extend .o-pack__item; /* [1] */
+    .c-site-nav__item {
       text-align: center;
+
+      @include mq($until: tablet) {
+        display: block;
+      }
     }
 
 
-      .site-nav__link {
+      .c-site-nav__link {
+        @include font-size(14px, false);
         color: $color-site-nav-link;
         display: block;
         letter-spacing: 3px;
         padding: $unit 0;
         text-transform: uppercase;
+
+        @include mq($until: tablet) {
+          padding: $unit-small 0;
+        }
 
         &:hover,
         &:focus {

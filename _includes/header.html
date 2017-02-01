@@ -1,6 +1,29 @@
-<header class="page-head"
+<header class="c-page-head"
         role="banner"
         itemscope
         itemtype="http://schema.org/WPHeader">
 
-</header><!-- /page-head -->
+  <div class="o-wrapper">
+
+    <figure class="o-flag  u-margin-bottom-none"
+            itemprop="image"
+            itemscope
+            itemtype="http://schema.org/ImageObject">
+
+      <div class="o-flag__img  c-page-head__photo">
+        <img src="{{ site.data.header.photo }}"
+             srcset="{{ site.data.header.photo }} 1x, {{ site.data.header.photo2x }} 2x"
+             alt=""
+             width="120"
+             height="120"
+             itemprop="contentUrl">
+      </div>
+
+      <figcaption class="o-flag__body  c-page-head__bio"
+                  itemprop="description">{{ site.data.header.bio }}</figcaption>
+
+    </figure>
+
+  </div>
+
+</header><!-- /c-page-head -->

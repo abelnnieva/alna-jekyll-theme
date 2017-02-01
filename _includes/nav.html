@@ -1,15 +1,15 @@
-<nav class="site-nav"
+<nav class="c-site-nav"
      role="navigation"
      itemscope
      itemtype="http://schema.org/SiteNavigationElement">
 
   <div class="o-wrapper">
 
-    <ul class="site-nav__list">
+    <ul class="o-pack  c-site-nav__list">
       {% for my_page in site.pages %}
         {% if my_page.title %}
-        <li class="site-nav__item">
-          <a class="site-nav__link"
+        <li class="o-pack__item  c-site-nav__item">
+          <a class="c-site-nav__link"
              href="{{ my_page.url | relative_url }}"
              title="{{ my_page.title | escape }}"
              itemprop="name">{{ my_page.title | escape }}</a>
@@ -20,4 +20,4 @@
 
   </div>
 
-</nav><!-- /site-nav -->
+</nav><!-- /c-site-nav -->
