@@ -1,0 +1,25 @@
+/* ==========================================================================
+   #POSTS-LIST
+   ========================================================================== */
+
+.c-posts-list {
+  padding-top: $unit-large;
+  padding-bottom: $unit-large;
+}
+
+
+  .c-posts-list__title {
+    text-align: center;
+    margin-bottom: $unit-large;
+  }
+
+
+  .c-posts-list__list {
+
+  }
+
+
+    .c-posts-list__item {
+      border-bottom: 1px solid $color-posts-list-border;
+      margin-top: $unit;
+    }

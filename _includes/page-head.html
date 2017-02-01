@@ -11,16 +11,20 @@
             itemtype="http://schema.org/ImageObject">
 
       <div class="o-flag__img  c-page-head__photo">
-        <img src="{{ site.data.header.photo }}"
-             srcset="{{ site.data.header.photo }} 1x, {{ site.data.header.photo2x }} 2x"
-             alt=""
-             width="120"
-             height="120"
-             itemprop="contentUrl">
+
+        <a href="/">
+          <img src="{{ site.data.page-head.photo }}"
+              srcset="{{ site.data.page-head.photo }} 1x, {{ site.data.page-head.photo2x }} 2x"
+              alt="{{ site.data.page-head.photo-alt }}"
+              width="120"
+              height="120"
+              itemprop="contentUrl">
+        </a>
+
       </div>
 
       <figcaption class="o-flag__body  c-page-head__bio"
-                  itemprop="description">{{ site.data.header.bio }}</figcaption>
+                  itemprop="description">{{ site.data.page-head.bio }}</figcaption>
 
     </figure>
 

@@ -40,5 +40,7 @@
         &:hover,
         &:focus {
           background: $color-site-nav-link-background;
+          border-bottom: 0;
+          color: $color-site-nav-link;
         }
       }

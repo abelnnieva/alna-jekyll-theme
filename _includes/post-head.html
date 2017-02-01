@@ -1,0 +1,16 @@
+<header class="c-post-head">
+
+  {% include date.html %}
+
+  {% if page.layout == "post" %}
+    <h1 itemprop="headline">{{ post.title }}</h1>
+  {% else %}
+    <h4 itemprop="headline">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h4>
+
+    <link href="{{ post.url }}"
+          itemprop="url" />
+  {% endif %}
+
+</header><!-- /c-post-head -->

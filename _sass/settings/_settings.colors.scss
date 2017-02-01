@@ -4,9 +4,13 @@
 
 // Color palette
 
-$color-charcoal:      #2e3c54;
-$color-slate-blue:    #6a67ce;
-$color-white:         #fff;
+$color-charcoal:            #2e3c54;
+$color-slate-blue:          #6a67ce;
+$color-light-gray:          #cdcfd2;
+$color-bright-cerulean:     #1aafd0;
+$color-vivid-sky-blue:      #02ceff;
+$color-quick-silver:        #a1a4aa;
+$color-white:               #fff;
 
 
 
@@ -26,3 +30,27 @@ $color-site-nav-link-background:    hsla(0,0%,100%,.18);
 
 $color-page-head:                   $color-white;
 $color-page-head-background:        $color-slate-blue;
+
+
+
+
+
+// Posts list
+
+$color-posts-list-border:           $color-light-gray;
+
+
+
+
+// Links
+
+$color-links:                       $color-bright-cerulean;
+$color-links-hover:                 $color-vivid-sky-blue;
+
+
+
+
+
+// Date
+
+$color-date:                        $color-quick-silver;

@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
   {% include head.html %}
 
-<body>
+<body itemscope
+      itemtype="http://schema.org/WebPage">
 
   {% include page-head.html %}
 
   {% include site-nav.html %}
 
-  {{ content }}
+  <main role="main"
+        itemprop="mainContentOfPage"
+        itemscope
+        itemtype="http://schema.org/Blog">
+    {{ content }}
+  </main>
 
 </body>
 </html>

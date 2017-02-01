@@ -3,6 +3,13 @@
    ========================================================================== */
 
 a {
+  color: $color-links;
   text-decoration: none;
   transition: $global-transition;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $color-links-hover;
+    color: $color-links-hover;
+  }
 }
