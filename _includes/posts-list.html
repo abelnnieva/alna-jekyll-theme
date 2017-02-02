@@ -1,4 +1,4 @@
-<section class="o-wrapper  c-posts-list"
+<section class="c-posts-list"
          itemscope
          itemtype="http://schema.org/ItemList">
 
@@ -11,23 +11,23 @@
   {% endif %}
 
   <ul class="o-list-bare  c-posts-list__list">
-    {% for post in site.posts limit:6 %}
-      {% unless post.categories contains 'books' %}
-      <li class="c-posts-list__item"
-          itemprop="itemListElement"
-          itemscope
-          itemtype="http://schema.org/ListItem">
+    {% if page.layout == "default" %}
 
-        <article itemprop="item"
-                 itemscope
-                 itemType="http://schema.org/BlogPosting"
-                 itemid="{{ post.url }}">
-          {% include post-head.html %}
-        </article><!-- /post -->
+      {% for post in site.posts limit:3 %}
+        {% unless post.categories contains 'books' %}
+          {% include posts-list-item.html %}
+        {% endunless %}
+      {% endfor %}
 
-      </li>
-      {% endunless %}
-    {% endfor %}
+    {% else %}
+
+      {% for post in site.posts %}
+        {% unless post.categories contains 'books' %}
+          {% include posts-list-item.html %}
+        {% endunless %}
+      {% endfor %}
+
+    {% endif %}
   </ul>
 
   {% if page.layout == "default" %}

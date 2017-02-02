@@ -4,29 +4,6 @@
 
 .c-page-head {
   background: $color-page-head-background;
+  color: $color-page-head;
   padding: $unit-large 0;
-
-  @include mq($until: tablet) {
-    text-align: center;
-  }
 }
-
-
-  .c-page-head__photo {
-    @include mq($until: tablet) {
-      padding-right: 0;
-    }
-
-    img {
-      border-radius: 50%;
-    }
-  }
-
-
-  .c-page-head__bio {
-    color: $color-page-head;
-
-    @include mq($until: tablet) {
-      display: none;
-    }
-  }

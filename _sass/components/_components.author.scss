@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #AUTHOR
+   ========================================================================== */
+
+.c-author {
+  margin-bottom: 0;
+
+  @include mq($until: tablet) {
+    text-align: center;
+  }
+}
+
+
+  .c-author__photo {
+    @include mq($until: tablet) {
+      padding-right: 0;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+
+  .c-author__bio {
+    @include mq($until: tablet) {
+      display: none;
+    }
+  }
+

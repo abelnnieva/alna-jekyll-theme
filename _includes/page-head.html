@@ -4,30 +4,7 @@
         itemtype="http://schema.org/WPHeader">
 
   <div class="o-wrapper">
-
-    <figure class="o-flag  u-margin-bottom-none"
-            itemprop="image"
-            itemscope
-            itemtype="http://schema.org/ImageObject">
-
-      <div class="o-flag__img  c-page-head__photo">
-
-        <a href="/">
-          <img src="{{ site.data.page-head.photo }}"
-              srcset="{{ site.data.page-head.photo }} 1x, {{ site.data.page-head.photo2x }} 2x"
-              alt="{{ site.data.page-head.photo-alt }}"
-              width="120"
-              height="120"
-              itemprop="contentUrl">
-        </a>
-
-      </div>
-
-      <figcaption class="o-flag__body  c-page-head__bio"
-                  itemprop="description">{{ site.data.page-head.bio }}</figcaption>
-
-    </figure>
-
+    {% include author.html %}
   </div>
 
 </header><!-- /c-page-head -->

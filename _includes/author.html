@@ -1,0 +1,22 @@
+<figure class="o-flag  c-author"
+        itemprop="image"
+        itemscope
+        itemtype="http://schema.org/ImageObject">
+
+  <div class="o-flag__img  c-author__photo">
+
+    <a href="/">
+      <img src="{{ site.data.author.photo }}"
+           srcset="{{ site.data.author.photo }} 1x, {{ site.data.author.photo2x }} 2x"
+           alt="{{ site.data.author.photo-alt }}"
+           width="120"
+           height="120"
+           itemprop="contentUrl">
+    </a>
+
+  </div>
+
+  <figcaption class="o-flag__body  c-author__bio"
+              itemprop="description">{{ site.data.author.bio }}</figcaption>
+
+</figure><!-- /c-author -->
