@@ -1,0 +1,27 @@
+<footer class="c-page-foot"
+        role="contentinfo"
+        itemscope
+        itemtype="http://schema.org/WPFooter">
+
+  <div class="o-wrapper">
+
+    <ul class="o-list-inline  c-page-foot__list"
+        role="navigation"
+        itemscope
+        itemtype="http://schema.org/SiteNavigationElement">
+      {% for item in site.data.social-media %}
+        <li class="o-list-inline__item  c-page-foot__item">
+          {% include social-media.html name=item.name link=item.link %}
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p class="c-page-foot__about"
+       itemprop="about">{{ site.about }}</p>
+
+    <p class="c-page-foot__copyright"
+       itemprop="copyrightHolder">{{ site.copyright }}</p>
+
+  </div>
+
+</footer><!-- /c-page-foot -->

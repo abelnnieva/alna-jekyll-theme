@@ -145,7 +145,7 @@ $inuit-wrapper-width: 800px;
 // @import "../node_modules/inuitcss/objects/objects.media";
 @import "../node_modules/inuitcss/objects/objects.flag";
 @import "../node_modules/inuitcss/objects/objects.list-bare";
-// @import "../node_modules/inuitcss/objects/objects.list-inline";
+@import "../node_modules/inuitcss/objects/objects.list-inline";
 // @import "../node_modules/inuitcss/objects/objects.box";
 // @import "../node_modules/inuitcss/objects/objects.block";
 // @import "../node_modules/inuitcss/objects/objects.ratio";
@@ -166,6 +166,9 @@ $inuit-wrapper-width: 800px;
 @import "components/components.posts-list";
 @import "components/components.date";
 @import "components/components.author";
+@import "components/components.page-foot";
+@import "components/components.icons";
+@import "components/components.social-media";
 
 
 

@@ -5,23 +5,20 @@
 // Color palette
 
 $color-anti-flash-white:    #f1f1f1;
-$color-charcoal:            #2e3c54;
-$color-dark-gunmetal:       #1b2432;
-$color-light-gray:          #cdcfd2;
-$color-quick-silver:        #a1a4aa;
-$color-slate-blue:          #6a67ce;
+$color-apple-green:         #84bd00;
+$color-black-olive:         #3F3D41;
+$color-charcoal:            #3a4250;
+$color-gainsboro:           #dcdbcd;
+$color-pastel-gray:         #cacacb;
 $color-white:               #fff;
-$color-spanish-gray:        #999;
-$color-gainsboro:           #ddd;
-$color-medium-purple:       #a177ff;
 
 
 
 
 
 // UI color application
-$color-brand:                       $color-slate-blue;
-$color-text:                        $color-dark-gunmetal;
+$color-brand:                       $color-apple-green;
+$color-text:                        $color-black-olive;
 
 
 
@@ -31,7 +28,7 @@ $color-text:                        $color-dark-gunmetal;
 
 $color-site-nav-background:         $color-charcoal;
 $color-site-nav-link:               $color-white;
-$color-site-nav-link-background:    hsla(0,0%,100%,.18);
+$color-site-nav-link-background:    rgba($color-white, 0.2);
 
 
 
@@ -57,7 +54,7 @@ $color-posts-list-background:       $color-white;
 // Links
 
 $color-links:                       $color-brand;
-$color-links-hover:                 $color-medium-purple;
+$color-links-hover:                 $color-text;
 
 
 
@@ -65,7 +62,7 @@ $color-links-hover:                 $color-medium-purple;
 
 // Date
 
-$color-date:                        $color-spanish-gray;
+$color-date:                        $color-pastel-gray;
 
 
 
@@ -74,5 +71,26 @@ $color-date:                        $color-spanish-gray;
 // Buttons
 
 $color-btn-primary:                 $color-white;
-$color-btn-primary-hover:           $color-medium-purple;
 $color-btn-primary-background:      $color-brand;
+$color-btn-primary-hover:           $color-text;
+
+$color-btn-secondary:               $color-white;
+$color-btn-secondary-background:    $color-pastel-gray;
+$color-btn-secondary-hover:         $color-text;
+
+
+
+
+
+// Social media
+
+$color-social-media:                $color-pastel-gray;
+$color-social-media-hover:          $color-text;
+
+
+
+
+
+// Page foot
+
+$color-page-foot:                   $color-text

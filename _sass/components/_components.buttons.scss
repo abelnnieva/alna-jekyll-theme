@@ -48,6 +48,24 @@
 
 }
 
+.c-btn--secondary {
+  background-color: $color-btn-secondary-background;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; /* [3] */
+    color: $color-btn-secondary;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-secondary-hover;
+  }
+
+}
+
 
 
 
@@ -94,6 +112,16 @@ $btn-ghost-border-width: 2px;
       &:hover,
       &:focus {
         color: $color-btn-primary-hover;
+      }
+
+    }
+
+    &.c-btn--secondary {
+      color: $color-btn-secondary-background;
+
+      &:hover,
+      &:focus {
+        color: $color-btn-secondary-hover;
       }
 
     }

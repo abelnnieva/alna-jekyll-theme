@@ -1,0 +1,36 @@
+/* ==========================================================================
+   #DATE
+   ========================================================================== */
+
+.c-page-foot {
+  @include font-size(14px, false);
+  color: $color-page-foot;
+  padding: $unit-large 0;
+  text-align: center;
+}
+
+
+  .c-page-foot__about {
+    margin-bottom: $unit-small;
+
+    a {
+      border-bottom: 1px dotted currentColor;
+      color: $color-page-foot;
+    }
+  }
+
+
+  .c-page-foot__copyright {
+    font-weight: $semi-bold;
+    margin-bottom: 0;
+  }
+
+
+  .c-page-foot__list {
+  }
+
+
+    .c-page-foot__item {
+      @include font-size(24px, false);
+      padding: 0 $unit-small;
+    }
