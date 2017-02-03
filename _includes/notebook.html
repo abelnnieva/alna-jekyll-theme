@@ -1,0 +1,38 @@
+<section class="c-notebook"
+         itemscope
+         itemtype="http://schema.org/ItemList">
+
+  <h1 class="c-notebook__headline"
+      itemprop="name">{{ include.headline }}</h1>
+
+  <ul class="o-list-bare  c-notebook__list">
+    {% for post in site.posts limit:include.limit %}
+      <li class="c-notebook__item"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="http://schema.org/ListItem">
+
+        <article itemprop="item"
+                 itemscope
+                 itemType="http://schema.org/BlogPosting"
+                 itemid="{{ post.url }}">
+          {% include post-head.html %}
+        </article>
+
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if include.limit %}
+    <div class="c-notebook__foot">
+
+      <a class="c-btn  c-btn--secondary  c-btn--ghost"
+         href="{{ include.permalink }}">{{ include.see-more }}</a>
+
+      <link href="{{ include.permalink }}"
+            itemprop="url" />
+
+    </div>
+  {% endif %}
+
+</section><!-- /c-notebook -->
