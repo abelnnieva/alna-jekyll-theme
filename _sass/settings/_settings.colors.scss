@@ -4,13 +4,24 @@
 
 // Color palette
 
+$color-anti-flash-white:    #f1f1f1;
 $color-charcoal:            #2e3c54;
-$color-slate-blue:          #6a67ce;
+$color-dark-gunmetal:       #1b2432;
 $color-light-gray:          #cdcfd2;
-$color-bright-cerulean:     #1aafd0;
-$color-vivid-sky-blue:      #02ceff;
 $color-quick-silver:        #a1a4aa;
+$color-slate-blue:          #6a67ce;
 $color-white:               #fff;
+$color-spanish-gray:        #999;
+$color-gainsboro:           #ddd;
+$color-medium-purple:       #a177ff;
+
+
+
+
+
+// UI color application
+$color-brand:                       $color-slate-blue;
+$color-text:                        $color-dark-gunmetal;
 
 
 
@@ -29,7 +40,7 @@ $color-site-nav-link-background:    hsla(0,0%,100%,.18);
 // Page head
 
 $color-page-head:                   $color-white;
-$color-page-head-background:        $color-slate-blue;
+$color-page-head-background:        $color-brand;
 
 
 
@@ -37,15 +48,16 @@ $color-page-head-background:        $color-slate-blue;
 
 // Posts list
 
-$color-posts-list-border:           $color-light-gray;
+$color-posts-list-border:           $color-gainsboro;
+$color-posts-list-background:       $color-white;
 
 
 
 
 // Links
 
-$color-links:                       $color-bright-cerulean;
-$color-links-hover:                 $color-vivid-sky-blue;
+$color-links:                       $color-brand;
+$color-links-hover:                 $color-medium-purple;
 
 
 
@@ -53,4 +65,14 @@ $color-links-hover:                 $color-vivid-sky-blue;
 
 // Date
 
-$color-date:                        $color-quick-silver;
+$color-date:                        $color-spanish-gray;
+
+
+
+
+
+// Buttons
+
+$color-btn-primary:                 $color-white;
+$color-btn-primary-hover:           $color-medium-purple;
+$color-btn-primary-background:      $color-brand;

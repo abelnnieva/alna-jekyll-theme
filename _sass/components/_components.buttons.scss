@@ -1,0 +1,101 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Reset/normalize some styles.
+ * 4. Force all button-styled elements to appear clickable.
+ */
+
+.c-btn {
+  @include font-size(18px, 2.2);
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  text-align: center; /* [3] */
+  margin: 0; /* [3] */
+  cursor: pointer; /* [4] */
+  padding: 0 $unit;
+  transition: $global-transition;
+  border-radius: $global-radius;
+  font-weight: $semi-bold;
+
+}
+
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+.c-btn--primary {
+  background-color: $color-btn-primary-background;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; /* [3] */
+    color: $color-btn-primary;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-primary-hover;
+  }
+
+}
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+.c-btn--small {
+  @include font-size(16px, 1.8);
+  padding: 0 $unit-small;
+}
+
+.c-btn--large {
+  @include font-size(20px, 2.6);
+  padding: 0 $unit-large;
+}
+
+
+
+
+
+/* Ghost buttons
+   ========================================================================== */
+
+/**
+ * Ghost buttons have see-through backgrounds and are bordered.
+ */
+
+$btn-ghost-border-width: 2px;
+
+.c-btn--ghost {
+  box-shadow: inset 0 0 0 $btn-ghost-border-width currentColor;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+  }
+
+    &.c-btn--primary {
+      color: $color-btn-primary-background;
+
+      &:hover,
+      &:focus {
+        color: $color-btn-primary-hover;
+      }
+
+    }
+
+}

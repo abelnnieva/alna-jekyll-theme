@@ -31,11 +31,15 @@
   </ul>
 
   {% if page.layout == "default" %}
-    <a href="{{ site.data.posts-list.permalink }}"
-       title="{{ site.data.posts-list.more-posts }}">{{ site.data.posts-list.more-posts }}</a>
+    <div class="c-posts-list__more-posts">
 
-    <link href="{{ site.data.post-list.permalink }}"
-          itemprop="url" />
+      <a class="c-btn  c-btn--primary  c-btn--ghost"
+         href="{{ site.data.posts-list.permalink }}">{{ site.data.posts-list.more-posts }}</a>
+
+      <link href="{{ site.data.post-list.permalink }}"
+            itemprop="url" />
+
+    </div>
   {% endif %}
 
 </section><!-- /c-posts-list -->

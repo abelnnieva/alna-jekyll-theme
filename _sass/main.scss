@@ -79,7 +79,11 @@
 
 // SETTINGS
 // @import "settings/example.settings.config";
+
+$inuit-global-font-size:    18px;
+$inuit-global-line-height:  24px;
 @import "../node_modules/inuitcss/settings/settings.core";
+
 @import "settings/settings.global";
 @import "settings/settings.colors";
 
@@ -112,7 +116,15 @@
 // ELEMENTS
 @import "../node_modules/inuitcss/elements/elements.page";
 @import "elements/elements.page";
+
+$inuit-font-size-h1:  36px;
+$inuit-font-size-h2:  32px;
+$inuit-font-size-h3:  22px;
+$inuit-font-size-h4:  20px;
+$inuit-font-size-h5:  18px;
+$inuit-font-size-h6:  16px;
 @import "../node_modules/inuitcss/elements/elements.headings";
+
 @import "elements/elements.headings";
 @import "../node_modules/inuitcss/elements/elements.images";
 @import "../node_modules/inuitcss/elements/elements.tables";
@@ -128,6 +140,7 @@
 
 $inuit-wrapper-width: 800px;
 @import "../node_modules/inuitcss/objects/objects.wrapper";
+
 // @import "../node_modules/inuitcss/objects/objects.layout";
 // @import "../node_modules/inuitcss/objects/objects.media";
 @import "../node_modules/inuitcss/objects/objects.flag";
@@ -147,7 +160,7 @@ $inuit-wrapper-width: 800px;
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
-// @import "components/example.components.buttons";
+@import "components/components.buttons";
 @import "components/components.site-nav";
 @import "components/components.page-head";
 @import "components/components.posts-list";
@@ -163,6 +176,7 @@ $inuit-wrapper-width: 800px;
 
 $inuit-offsets: true;
 @import "../node_modules/inuitcss/utilities/utilities.widths";
+
 @import "../node_modules/inuitcss/utilities/utilities.headings";
 @import "../node_modules/inuitcss/utilities/utilities.spacing";
 @import "../node_modules/inuitcss/utilities/utilities.print";

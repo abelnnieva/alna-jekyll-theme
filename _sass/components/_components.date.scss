@@ -3,6 +3,6 @@
    ========================================================================== */
 
 .c-date {
-  @include font-size(14px, false);
+  @include font-size(16px);
   color: $color-date;
 }

@@ -3,7 +3,9 @@
    ========================================================================== */
 
 .c-posts-list {
+  background: $color-posts-list-background;
   padding: $unit-large 0;
+  border-bottom: 1px solid $color-posts-list-border;
 }
 
 
@@ -13,8 +15,13 @@
   }
 
 
-  .c-posts-list__list {
+  .c-posts-list__more-posts {
+    text-align: center;
+  }
 
+
+  .c-posts-list__list {
+    margin-bottom: $unit-large;
   }
 
 
