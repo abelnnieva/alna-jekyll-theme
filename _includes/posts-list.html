@@ -11,23 +11,21 @@
   {% endif %}
 
   <ul class="o-list-bare  c-posts-list__list">
-    {% if page.layout == "default" %}
+    {% for post in site.posts limit:include.limit %}
+      <li class="c-posts-list__item"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="http://schema.org/ListItem">
 
-      {% for post in site.posts limit:3 %}
-        {% unless post.categories contains 'books' %}
-          {% include posts-list-item.html %}
-        {% endunless %}
-      {% endfor %}
+        <article itemprop="item"
+                 itemscope
+                 itemType="http://schema.org/BlogPosting"
+                 itemid="{{ post.url }}">
+          {% include post-head.html %}
+        </article>
 
-    {% else %}
-
-      {% for post in site.posts %}
-        {% unless post.categories contains 'books' %}
-          {% include posts-list-item.html %}
-        {% endunless %}
-      {% endfor %}
-
-    {% endif %}
+      </li>
+    {% endfor %}
   </ul>
 
   {% if page.layout == "default" %}
@@ -36,7 +34,7 @@
       <a class="c-btn  c-btn--secondary  c-btn--ghost"
          href="{{ site.data.posts-list.permalink }}">{{ site.data.posts-list.more-posts }}</a>
 
-      <link href="{{ site.data.post-list.permalink }}"
+      <link href="{{ site.data.posts-list.permalink }}"
             itemprop="url" />
 
     </div>

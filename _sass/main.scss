@@ -141,7 +141,7 @@ $inuit-font-size-h6:  16px;
 $inuit-wrapper-width: 800px;
 @import "../node_modules/inuitcss/objects/objects.wrapper";
 
-// @import "../node_modules/inuitcss/objects/objects.layout";
+@import "../node_modules/inuitcss/objects/objects.layout";
 // @import "../node_modules/inuitcss/objects/objects.media";
 @import "../node_modules/inuitcss/objects/objects.flag";
 @import "../node_modules/inuitcss/objects/objects.list-bare";
@@ -169,6 +169,8 @@ $inuit-wrapper-width: 800px;
 @import "components/components.page-foot";
 @import "components/components.icons";
 @import "components/components.social-media";
+@import "components/components.bookcase";
+@import "components/components.book";
 
 
 

@@ -1,6 +1,6 @@
-{% assign m = post.date | date: "%-m" %}
+{% assign m = include.date | date: "%-m" %}
 
-<time datetime="{{ post.date | date_to_xmlschema  }}"
+<time datetime="{{ include.date | date_to_xmlschema  }}"
       class="c-date"
       itemprop="datePublished">
   {% case m %}
@@ -17,6 +17,6 @@
     {% when '11' %}Noviembre
     {% when '12' %}Diciembre
   {% endcase %}
-  {{ post.date | date: "%-d, " }}
-  {{ post.date | date: "%Y" }}
+  {{ include.date | date: "%-d, " }}
+  {{ include.date | date: "%Y" }}
 </time>

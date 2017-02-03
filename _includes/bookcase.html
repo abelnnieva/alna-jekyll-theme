@@ -1,0 +1,33 @@
+<section class="c-bookcase"
+         itemscope
+         itemtype="http://schema.org/ItemList">
+
+  <h1 class="c-bookcase__headline"
+      itemprop="name">{{ include.headline }}</h1>
+
+  <ul class="o-layout  c-bookcase__list">
+    {% for book in site.books limit:include.limit %}<!--
+   --><li class="o-layout__item  c-bookcase__item  u-1/3">
+
+        <a class="c-bookcase__link"
+           href="{{ book.url }}">
+          {% include book.html cover=book.slug date=book.date headline=book.headline excerpt=book.excerpt %}
+        </a>
+
+      </li><!--
+ -->{% endfor %}
+  </ul>
+
+  {% if include.limit %}
+    <div class="c-bookcase__foot">
+
+      <a class="c-btn  c-btn--secondary  c-btn--ghost"
+         href="{{ include.permalink }}">{{ include.see-more }}</a>
+
+      <link href="{{ include.permalink }}"
+            itemprop="url" />
+
+    </div>
+  {% endif %}
+
+</section><!-- /c-bookcase -->

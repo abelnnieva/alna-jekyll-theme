@@ -46,7 +46,7 @@ $color-page-head-background:        $color-brand;
 // Posts list
 
 $color-posts-list-border:           $color-gainsboro;
-$color-posts-list-background:       $color-white;
+
 
 
 
@@ -93,4 +93,22 @@ $color-social-media-hover:          $color-text;
 
 // Page foot
 
-$color-page-foot:                   $color-text
+$color-page-foot:                   $color-text;
+
+
+
+
+
+// Bookcase
+
+$color-bookcase:                    $color-text;
+$color-bookcase-border:             $color-gainsboro;
+
+
+
+
+
+// Book
+
+$color-book-background:            $color-anti-flash-white;
+$color-book-hover:                 darken($color-anti-flash-white, 10%);

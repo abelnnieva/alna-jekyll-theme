@@ -1,0 +1,34 @@
+/* ==========================================================================
+   #BOOKCASE
+   ========================================================================== */
+
+.c-bookcase {
+  padding: $unit-large 0;
+  border-bottom: 1px solid $color-bookcase-border;
+}
+
+
+  .c-bookcase__headline {
+    text-align: center;
+    margin-bottom: $unit-large;
+  }
+
+
+  .c-bookcase__foot {
+    text-align: center;
+  }
+
+
+  .c-bookcase__list {
+    margin-bottom: $unit;
+  }
+
+
+    .c-bookcase__item {
+      margin-bottom: $unit;
+    }
+
+
+      .c-bookcase__link {
+        color: $color-bookcase;
+      }
