@@ -19,15 +19,7 @@
   </ul>
 
   {% if include.limit %}
-    <div class="c-bookcase__foot">
-
-      <a class="c-btn  c-btn--secondary  c-btn--ghost"
-         href="{{ include.permalink }}">{{ include.see-more }}</a>
-
-      <link href="{{ include.permalink }}"
-            itemprop="url" />
-
-    </div>
+    {% include see-more.html label=include.see-more permalink=include.permalink %}
   {% endif %}
 
 </section><!-- /c-bookcase -->
