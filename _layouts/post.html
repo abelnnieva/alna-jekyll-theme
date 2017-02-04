@@ -4,12 +4,16 @@ layout: default
 
 <article class="c-post">
 
+  {% if page.book-details %}
+    {% include book-details.html details=page.book-details %}
+  {% endif %}
+
   {% include post-head.html date=page.date title=page.title %}
 
   <div class="c-post__content">
     {{ content }}
   </div>
 
-  {% include author.html %}
+  {% include author.html shaded=true %}
 
 </article><!-- /c-post -->

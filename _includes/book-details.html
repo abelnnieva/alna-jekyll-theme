@@ -1,0 +1,45 @@
+<article class="o-flag  c-book-details"
+         itemscope
+         itemtype="http://schema.org/Book">
+
+  <div class="o-flag__img  c-book-details__cover">
+    <img src="/assets/img/books/{{ page.slug }}.jpg"
+         alt="{{ include.details.title }}"
+         itemprop="image">
+  </div>
+
+  <div class="o-flag__body">
+
+    {% include rating.html rating=include.details.rating %}
+
+    <h5 class="c-book-details__title"
+        itemprop="name">{{ include.details.title }}</h5>
+
+    <div class="c-book-details__details">
+
+      <div itemprop="author"
+           itemscope
+           itemtype="http://schema.org/Person">
+        Por <span itemprop="name">{{ include.details.author }}</span>
+      </div>
+
+      <div class="u-margin-top-tiny  u-margin-bottom-tiny">
+        <span itemprop="bookFormatType">{{ include.details.format-type }}</span>,
+        <span itemprop="numberOfPages">{{ include.details.pages }}</span>
+        <div>{{ include.details.publication-date }}</div>
+      </div>
+
+      <dl class="c-book-details__descriptions">
+        <dt>Título original</dt>
+        <dd>{{ include.details.original-title }}</dd>
+        <dt>ISBN</dt>
+        <dd itemprop="isbn">{{ include.details.ISBN }}</dd>
+        <dt>Edición</dt>
+        <dd itemprop="inLanguage">{{ include.details.edition-language }}</dd>
+      </dl>
+
+    </div>
+
+  </div>
+
+</article><!-- /c-book-details -->

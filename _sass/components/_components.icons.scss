@@ -17,7 +17,7 @@
 
 
 
-.icon {
+.c-icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -39,42 +39,42 @@
 /* Type variants
    ========================================================================== */
 
-.icon--mail:before {
-  content: "\ea84";
-}
-
-.icon--facebook:before {
+.c-icon--facebook:before {
   content: "\ea90";
 }
 
-.icon--instagram:before {
+.c-icon--instagram:before {
   content: "\ea92";
 }
 
-.icon--twitter:before {
+.c-icon--twitter:before {
   content: "\ea96";
 }
 
-.icon--youtube:before {
+.c-icon--youtube:before {
   content: "\ea9d";
 }
 
-.icon--github:before {
+.c-icon--github:before {
   content: "\eab0";
 }
 
-.icon--soundcloud:before {
+.c-icon--soundcloud:before {
   content: "\eac3";
 }
 
-.icon--linkedin:before {
+.c-icon--linkedin:before {
   content: "\eaca";
 }
 
-.icon--menu:before {
-  content: "\e9bd";
+.c-icon--envelop:before {
+  content: "\e945";
 }
 
-.icon--cross:before {
-  content: "\ea0f";
+.c-icon--star-empty:before {
+  content: "\e9d7";
+}
+
+.c-icon--star-full:before {
+  content: "\e9d9";
 }

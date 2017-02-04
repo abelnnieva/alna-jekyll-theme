@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #DESCRIPTIONS
+   ========================================================================== */
+
+dl {
+
+}
+
+  dt {
+    font-weight: $semi-bold;
+    float: left;
+    clear: left;
+    width: $unit * 5;
+
+    &:after {
+      content: ":";
+    }
+  }
+
+  dd {
+    margin-left: $unit;
+    padding-left: $unit;
+  }

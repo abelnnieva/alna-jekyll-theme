@@ -129,6 +129,7 @@ $inuit-font-size-h6:  14px;
 @import "../node_modules/inuitcss/elements/elements.images";
 @import "../node_modules/inuitcss/elements/elements.tables";
 @import "elements/elements.links";
+@import "elements/elements.descriptions";
 
 
 
@@ -175,6 +176,8 @@ $inuit-wrapper-width: 800px;
 @import "components/components.page-content";
 @import "components/components.post";
 @import "components/components.post-head";
+@import "components/components.book-details";
+@import "components/components.rating";
 
 
 

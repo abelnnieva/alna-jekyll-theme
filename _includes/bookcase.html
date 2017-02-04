@@ -13,7 +13,7 @@
 
         <a class="c-bookcase__link"
            href="{{ book.url }}">
-          {% include book.html cover=book.slug date=book.date headline=book.headline excerpt=book.excerpt %}
+          {% include book.html date=book.date title=book.title excerpt=book.excerpt details=book.book-details %}
         </a>
 
       </li><!--

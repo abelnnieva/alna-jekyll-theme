@@ -4,6 +4,7 @@
 
 .c-author {
   margin-bottom: 0;
+  padding: 0 $unit;
 
   @include mq($until: tablet) {
     text-align: center;
@@ -28,3 +29,14 @@
     }
   }
 
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+.c-author--shaded {
+  background: $color-author-background;
+  padding: $unit;
+}

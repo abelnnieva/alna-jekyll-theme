@@ -1,14 +1,14 @@
 <div class="o-block  c-book">
 
   <div class="o-block__img  c-book__cover">
-    <img src="/assets/img/books/{{ include.cover }}.jpg"/>
+    <img src="/assets/img/books/{{ book.slug }}.jpg"/>
   </div>
 
   <div class="o-block__body">
 
-    {% include date.html date=include.date %}
+    {% include rating.html rating=include.details.rating %}
 
-    <h4 class="c-book__headline">{{ include.headline }}</h4>
+    <h4 class="c-book__headline">{{ include.title }}</h4>
 
     <p class="c-book__excerpt">{{ include.excerpt }}</p>
 

@@ -1,0 +1,30 @@
+{% case include.rating %}
+  {% when 1 %}
+    {% assign title = 'No me gustó' %}
+  {% when 2 %}
+    {% assign title = 'Estuvo bien' %}
+  {% when 3 %}
+    {% assign title = 'Me gustó' %}
+  {% when 4 %}
+    {% assign title = 'Realmente me gustó' %}
+  {% when 5 %}
+    {% assign title = 'Fue increíble' %}
+{% endcase %}
+
+<div class="c-rating"
+     title="{{ title }}"
+     itemscope
+     itemtype="http://schema.org/AggregateRating">
+
+  {% for i in (1..5) %}
+    {% if i <= include.rating %}
+      <span class="c-icon  c-icon--star-full"></span>
+    {% else %}
+      <span class="c-icon  c-icon--star-empty"></span>
+    {% endif %}
+  {% endfor %}
+
+  <span class="u-hidden-visually"
+        itemprop="ratingValue">{{ include.rating }}</span>
+
+</div><!-- /c-rating -->

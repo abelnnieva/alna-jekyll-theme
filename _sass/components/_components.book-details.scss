@@ -1,0 +1,45 @@
+/* ==========================================================================
+   #BOOK-DETAILS
+   ========================================================================== */
+
+.c-book-details {
+  background: $color-book-details-background;
+  padding: $unit;
+  margin-bottom: $unit-large;
+
+  small {
+    display: block;
+  }
+}
+
+
+  .c-book-details__cover {
+    @include mq($until: tablet) {
+      display: block;
+      float: none;
+      margin: 0 auto $unit;
+    }
+
+    img {
+      max-height: 170px;
+    }
+  }
+
+
+  .c-book-details__title {
+    margin-bottom: 0;
+  }
+
+
+  .c-book-details__details {
+    @include font-size(14px, false);
+  }
+
+
+  .c-book-details__descriptions {
+    margin-bottom: 0;
+
+    @include mq($until: tablet) {
+      display: none;
+    }
+  }

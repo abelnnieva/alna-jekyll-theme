@@ -4,11 +4,12 @@
 
 // Color palette
 
-$color-anti-flash-white:    #f2f2f2;
+$color-anti-flash-white:    #f1f1f1;
 $color-apple-green:         #84bd00;
 $color-gunmetal:            #272e39;
 $color-pastel-gray:         #cacacb;
 $color-white:               #fff;
+$color-princeton-orange:    #ff7b25;
 
 
 
@@ -126,3 +127,27 @@ $color-page-content-border:         $color-anti-flash-white;
 // Post
 
 $color-post-border:                 $color-anti-flash-white;
+
+
+
+
+
+// Book details
+
+$color-book-details-background:     $color-anti-flash-white;
+
+
+
+
+
+// Author
+
+$color-author-background:           $color-anti-flash-white;
+
+
+
+
+
+// Rating
+
+$color-rating:                      $color-princeton-orange;
