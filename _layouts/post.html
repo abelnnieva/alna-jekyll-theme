@@ -2,4 +2,14 @@
 layout: default
 ---
 
-{{ content }}
+<article class="c-post">
+
+  {% include post-head.html date=page.date title=page.title %}
+
+  <div class="c-post__content">
+    {{ content }}
+  </div>
+
+  {% include author.html %}
+
+</article><!-- /c-post -->

@@ -2,8 +2,10 @@
          itemscope
          itemtype="http://schema.org/ItemList">
 
-  <h1 class="c-bookcase__headline"
-      itemprop="name">{{ include.headline }}</h1>
+  {% if include.headline %}
+    <h1 class="c-bookcase__headline"
+        itemprop="name">{{ include.headline }}</h1>
+  {% endif %}
 
   <ul class="o-layout  c-bookcase__list">
     {% for book in site.books limit:include.limit %}<!--

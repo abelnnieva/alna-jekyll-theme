@@ -4,11 +4,9 @@
 
 // Color palette
 
-$color-anti-flash-white:    #f1f1f1;
+$color-anti-flash-white:    #f2f2f2;
 $color-apple-green:         #84bd00;
-$color-black-olive:         #3F3D41;
-$color-charcoal:            #3a4250;
-$color-gainsboro:           #dcdbcd;
+$color-gunmetal:            #272e39;
 $color-pastel-gray:         #cacacb;
 $color-white:               #fff;
 
@@ -18,7 +16,7 @@ $color-white:               #fff;
 
 // UI color application
 $color-brand:                       $color-apple-green;
-$color-text:                        $color-black-olive;
+$color-text:                        $color-gunmetal;
 
 
 
@@ -26,9 +24,9 @@ $color-text:                        $color-black-olive;
 
 // Site nav
 
-$color-site-nav-background:         $color-charcoal;
+$color-site-nav-background:         $color-gunmetal;
 $color-site-nav-link:               $color-white;
-$color-site-nav-link-background:    rgba($color-white, 0.2);
+$color-site-nav-link-background:    rgba($color-white, 0.10);
 
 
 
@@ -45,7 +43,7 @@ $color-page-head-background:        $color-brand;
 
 // Notebook
 
-$color-notebook-border:           $color-gainsboro;
+$color-notebook-border:             $color-anti-flash-white;
 
 
 
@@ -102,7 +100,7 @@ $color-page-foot:                   $color-text;
 // Bookcase
 
 $color-bookcase:                    $color-text;
-$color-bookcase-border:             $color-gainsboro;
+$color-bookcase-border:             $color-anti-flash-white;
 
 
 
@@ -110,5 +108,21 @@ $color-bookcase-border:             $color-gainsboro;
 
 // Book
 
-$color-book-background:            $color-anti-flash-white;
-$color-book-hover:                 darken($color-anti-flash-white, 10%);
+$color-book-background:             $color-anti-flash-white;
+$color-book-hover:                  darken($color-anti-flash-white, 10%);
+
+
+
+
+
+// Page content
+
+$color-page-content-border:         $color-anti-flash-white;
+
+
+
+
+
+// Post
+
+$color-post-border:                 $color-anti-flash-white;

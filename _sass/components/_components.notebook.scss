@@ -15,11 +15,16 @@
 
 
   .c-notebook__list {
-    margin-bottom: $unit-large;
+    padding-bottom: $unit;
+    margin-bottom: 0;
   }
 
 
     .c-notebook__item {
       border-bottom: 1px solid $color-notebook-border;
       margin-top: $unit;
+
+      &:last-child {
+        border-bottom: 0;
+      }
     }

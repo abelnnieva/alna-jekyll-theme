@@ -2,4 +2,15 @@
 layout: default
 ---
 
-{{ content }}
+{% unless page.custom-content %}
+  <article class="c-page-content">
+
+    <h1 class="c-page-content__headline"
+        itemprop="headline">{{ page.headline }}</h1>
+
+    {{ content }}
+
+  </article><!-- /c-page-content -->
+{% else %}
+  {{ content }}
+{% endunless %}

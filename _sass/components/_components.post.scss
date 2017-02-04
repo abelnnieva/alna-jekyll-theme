@@ -1,0 +1,25 @@
+/* ==========================================================================
+   #POST
+   ========================================================================== */
+
+.c-post {
+  padding: $unit-large 0;
+  border-bottom: 1px solid $color-post-border;
+
+  p {
+    line-height: 1.5;
+  }
+
+  h2 {
+    border-top: 1px solid $color-post-border;
+    margin: $unit-large 0 $unit-small;
+    padding: $unit 0;
+  }
+}
+
+
+  .c-post__content {
+    border-bottom: 1px solid $color-post-border;
+    margin-bottom: $unit-large;
+    padding-bottom: $unit;
+  }

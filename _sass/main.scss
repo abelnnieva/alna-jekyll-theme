@@ -118,11 +118,11 @@ $inuit-global-line-height:  24px;
 @import "elements/elements.page";
 
 $inuit-font-size-h1:  34px;
-$inuit-font-size-h2:  32px;
+$inuit-font-size-h2:  30px;
 $inuit-font-size-h3:  22px;
-$inuit-font-size-h4:  20px;
-$inuit-font-size-h5:  18px;
-$inuit-font-size-h6:  16px;
+$inuit-font-size-h4:  18px;
+$inuit-font-size-h5:  16px;
+$inuit-font-size-h6:  14px;
 @import "../node_modules/inuitcss/elements/elements.headings";
 
 @import "elements/elements.headings";
@@ -172,6 +172,9 @@ $inuit-wrapper-width: 800px;
 @import "components/components.bookcase";
 @import "components/components.book";
 @import "components/components.see-more";
+@import "components/components.page-content";
+@import "components/components.post";
+@import "components/components.post-head";
 
 
 

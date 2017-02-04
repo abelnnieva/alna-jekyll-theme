@@ -1,15 +1,15 @@
 <header class="c-post-head">
 
-  {% include date.html date=post.date %}
+  {% include date.html date=include.date %}
 
   {% if page.layout == "post" %}
-    <h1 itemprop="headline">{{ post.title }}</h1>
+    <h1 itemprop="headline">{{ include.title }}</h1>
   {% else %}
     <h3 itemprop="headline">
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ include.url }}">{{ include.title }}</a>
     </h3>
 
-    <link href="{{ post.url }}"
+    <link href="{{ include.url }}"
           itemprop="url" />
   {% endif %}
 
