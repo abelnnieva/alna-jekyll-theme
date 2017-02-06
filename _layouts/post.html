@@ -2,7 +2,9 @@
 layout: default
 ---
 
-<article class="c-post">
+<article class="c-post"
+         temscope
+         itemtype="http://schema.org/BlogPosting">
 
   {% if page.book-details %}
     {% include book-details.html details=page.book-details %}
@@ -10,10 +12,15 @@ layout: default
 
   {% include post-head.html date=page.date title=page.title %}
 
-  <div class="c-post__content">
+  <div class="c-post__content"
+       itemprop="articleBody">
     {{ content }}
   </div>
 
   {% include author.html shaded=true %}
+
+  {% if site.disqus.shortname %}
+    {% include disqus-comments.html %}
+  {% endif %}
 
 </article><!-- /c-post -->

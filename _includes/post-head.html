@@ -3,9 +3,9 @@
   {% include date.html date=include.date %}
 
   {% if page.layout == "post" %}
-    <h1 itemprop="headline">{{ include.title }}</h1>
+    <h1 itemprop="name headline">{{ include.title }}</h1>
   {% else %}
-    <h3 itemprop="headline">
+    <h3 itemprop="name headline">
       <a href="{{ include.url }}">{{ include.title }}</a>
     </h3>
 
