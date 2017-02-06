@@ -1,0 +1,25 @@
+<article class="o-block  c-project"
+         itemprop="item">
+
+  <div class="o-block__img  c-project__banner">
+    <img src="/assets/img/projects/{{ include.project.banner }}"/>
+  </div>
+
+  <div class="o-block__body  c-project__description">
+
+    <h3 class="c-project__headline">{{ include.project.headline }}</h3>
+
+    {{ include.project.description }}
+
+    {% if include.project.url %}
+      <div class="c-project__btn">
+        <a href="{{ include.project.url }}"
+           class="c-btn  c-btn--primary  c-btn--large  c-btn--ghost">
+          {{ include.project.call-to-action }}
+        </a>
+      </div>
+    {% endif %}
+
+  </div>
+
+</article><!-- /c-project -->

@@ -1,0 +1,23 @@
+<section class="c-portfolio"
+         itemscope
+         itemtype="http://schema.org/ItemList">
+
+  {% if include.headline %}
+    <h1 class="c-portfolio__headline"
+        itemprop="name">{{ include.headline }}</h1>
+  {% endif %}
+
+  <ul class="o-list-bare  c-portfolio__list">
+    {% for project in site.data.portfolio %}
+      <li class="c-portfolio__item"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="http://schema.org/ListItem">
+
+        {% include project.html project=project %}
+
+      </li>
+    {% endfor %}
+  </ul>
+
+</section><!-- /c-portfolio -->

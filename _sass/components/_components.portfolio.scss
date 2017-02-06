@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #PORTFOLIO
+   ========================================================================== */
+
+.c-portfolio {
+  border-bottom: 1px solid $color-portfolio-border;
+  padding: $unit-large 0;
+}
+
+
+  .c-portfolio__headline {
+    margin-bottom: $unit-large;
+    text-align: center;
+  }
+
+
+  .c-portfolio__list {
+    margin-bottom: 0;
+  }
