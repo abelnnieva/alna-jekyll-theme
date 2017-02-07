@@ -3,13 +3,20 @@
    ========================================================================== */
 
 .c-book {
-  &:hover,
-  &:focus {
-    .c-book__cover {
-      background: $color-book-hover;
+
+}
+
+
+  .c-book__link {
+    color: $color-bookcase;
+
+    &:hover,
+    &:focus {
+      .c-book__cover {
+        background: $color-book-hover;
+      }
     }
   }
-}
 
 
   .c-book__cover {

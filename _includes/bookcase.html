@@ -9,13 +9,11 @@
 
   <ul class="o-layout  c-bookcase__list">
     {% for book in site.books limit:include.limit %}<!--
-   --><li class="o-layout__item  c-bookcase__item  u-1/3">
-
-        <a class="c-bookcase__link"
-           href="{{ book.url }}">
-          {% include book.html date=book.date title=book.title excerpt=book.excerpt details=book.book-details %}
-        </a>
-
+   --><li class="o-layout__item  c-bookcase__item  u-1/3"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="http://schema.org/ListItem">
+        {% include book.html book=book %}
       </li><!--
  -->{% endfor %}
   </ul>

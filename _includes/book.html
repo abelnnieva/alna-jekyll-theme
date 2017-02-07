@@ -1,17 +1,31 @@
-<div class="o-block  c-book">
+<article class="o-block  c-book"
+         itemprop="item"
+         itemscope
+         itemType="http://schema.org/BlogPosting">
 
-  <div class="o-block__img  c-book__cover">
-    <img src="/assets/img/books/{{ book.slug }}.jpg"/>
-  </div>
+  <a class="c-book__link"
+     href="{{ include.book.url }}">
 
-  <div class="o-block__body">
+    <div class="o-block__img  c-book__cover">
+      <img src="/assets/img/books/{{ include.book.slug }}.jpg"
+           itemprop="thumbnail"/>
+    </div>
 
-    {% include rating.html rating=include.details.rating %}
+    <div class="o-block__body">
 
-    <h4 class="c-book__headline">{{ include.title }}</h4>
+      {% include rating.html rating=include.book.details.rating %}
 
-    <p class="c-book__excerpt">{{ include.excerpt }}</p>
+      <h4 class="c-book__headline"
+          itemprop="name headline">{{ include.book.title }}</h4>
 
-  </div>
+      <p class="c-book__excerpt"
+         itemprop="description">{{ include.book.excerpt }}</p>
 
-</div><!-- /c-book -->
+    </div>
+
+  </a>
+
+  <link href="{{ include.book.url }}"
+        itemprop="url" />
+
+</article><!-- /c-book -->

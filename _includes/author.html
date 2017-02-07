@@ -6,9 +6,9 @@
   <div class="o-flag__img  c-author__photo">
 
     <a href="/">
-      <img src="{{ site.data.author.photo }}"
-           srcset="{{ site.data.author.photo }} 1x, {{ site.data.author.photo2x }} 2x"
-           alt="{{ site.data.author.photo-alt }}"
+      <img src="{{ site.author.avatar }}"
+           srcset="{{ site.author.avatar }} 1x, {{ site.author.avatar2x }} 2x"
+           alt="{{ site.author.avatar_alt }}"
            width="120"
            height="120"
            itemprop="contentUrl">
@@ -17,6 +17,6 @@
   </div>
 
   <figcaption class="o-flag__body  c-author__bio"
-              itemprop="description">{{ site.data.author.bio }}</figcaption>
+              itemprop="description">{{ site.author.bio }}</figcaption>
 
 </figure><!-- /c-author -->
