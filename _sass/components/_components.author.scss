@@ -27,16 +27,9 @@
     @include mq($until: tablet) {
       display: none;
     }
+
+    a {
+      color: currentColor;
+      border-bottom: 1px dotted currentColor;
+    }
   }
-
-
-
-
-
-/* Style variants
-   ========================================================================== */
-
-.c-author--shaded {
-  background: $color-author-background;
-  padding: $unit;
-}

@@ -4,23 +4,22 @@
 
 // Color palette
 
-$color-snow:                #f9fafa;
-$color-platinum:            #e5e5e5;
-$color-apple-green:         #7ab55c;
-$color-onyx:                #30373b;
-$color-white:               #fff;
-$color-blue-sapphire:       #206882;
-$color-celestial-blue:      #479ccf;
-$color-sonic-silver:        #767676;
+$color-bleu-de-france:      #318CE7;
+$color-cyan-cobalt-blue:    #2d599e;
 $color-ghost-white:         #f6fafd;
-$color-azure:               #007aff;
+$color-onyx:                #30373b;
+$color-platinum:            #e5e5e5;
+$color-snow:                #f9fafa;
+$color-sonic-silver:        #767676;
+$color-white:               #fff;
 
 
 
 
 
 // UI color application
-$color-brand:                       $color-celestial-blue;
+
+$color-brand:                       $color-cyan-cobalt-blue;
 $color-text:                        $color-onyx;
 $color-border:                      $color-platinum;
 
@@ -41,7 +40,7 @@ $color-site-nav-link-background:    rgba($color-white, 0.10);
 // Page head
 
 $color-page-head:                   $color-white;
-$color-page-head-background:        linear-gradient(to right, #2d599e 0%, #3d93e2 100%);
+$color-page-head-background:        linear-gradient(to right, $color-cyan-cobalt-blue 0%, $color-bleu-de-france 100%);
 
 
 
@@ -57,7 +56,7 @@ $color-notebook-border:             $color-border;
 
 // Links
 
-$color-links:                       $color-blue-sapphire;
+$color-links:                       $color-cyan-cobalt-blue;
 $color-links-hover:                 $color-text;
 
 
@@ -79,7 +78,7 @@ $color-btn-primary-background:      $color-brand;
 $color-btn-primary-hover:           $color-text;
 
 $color-btn-secondary:               $color-white;
-$color-btn-secondary-background:    $color-platinum;
+$color-btn-secondary-background:    $color-sonic-silver;
 $color-btn-secondary-hover:         $color-text;
 
 
@@ -140,7 +139,7 @@ $color-post-border:                 $color-border;
 // Book details
 
 $color-book-details-background:     $color-ghost-white;
-$color-book-details-border:         $color-celestial-blue;
+$color-book-details-border:         $color-bleu-de-france;
 
 
 
@@ -156,7 +155,7 @@ $color-author-background:           $color-snow;
 
 // Rating
 
-$color-rating:                      $color-celestial-blue;
+$color-rating:                      $color-bleu-de-france;
 
 
 

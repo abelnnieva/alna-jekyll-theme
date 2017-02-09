@@ -15,6 +15,10 @@
     margin: $unit-large 0 $unit-small;
     padding: $unit 0;
   }
+
+  a {
+    border-bottom: 1px dotted currentColor;
+  }
 }
 
 
