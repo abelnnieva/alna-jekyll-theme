@@ -6,6 +6,7 @@
   background: $color-book-details-background;
   padding: $unit;
   margin-bottom: $unit-large;
+  border-left: 4px solid $color-book-details-border;
 
   small {
     display: block;
@@ -21,7 +22,7 @@
     }
 
     img {
-      max-height: 170px;
+      max-height: 180px;
     }
   }
 

@@ -4,20 +4,25 @@
 
 // Color palette
 
-$color-anti-flash-white:    #f1f1f1;
-$color-apple-green:         #84bd00;
-$color-black-olive:         #3D3C42;
-$color-pastel-gray:         #cacacb;
+$color-snow:                #f9fafa;
+$color-platinum:            #e5e5e5;
+$color-apple-green:         #7ab55c;
+$color-onyx:                #30373b;
 $color-white:               #fff;
-$color-princeton-orange:    #ff7b25;
+$color-blue-sapphire:       #206882;
+$color-celestial-blue:      #479ccf;
+$color-sonic-silver:        #767676;
+$color-ghost-white:         #f6fafd;
+$color-azure:               #007aff;
 
 
 
 
 
 // UI color application
-$color-brand:                       $color-apple-green;
-$color-text:                        $color-black-olive;
+$color-brand:                       $color-celestial-blue;
+$color-text:                        $color-onyx;
+$color-border:                      $color-platinum;
 
 
 
@@ -25,7 +30,7 @@ $color-text:                        $color-black-olive;
 
 // Site nav
 
-$color-site-nav-background:         $color-black-olive;
+$color-site-nav-background:         $color-onyx;
 $color-site-nav-link:               $color-white;
 $color-site-nav-link-background:    rgba($color-white, 0.10);
 
@@ -36,7 +41,7 @@ $color-site-nav-link-background:    rgba($color-white, 0.10);
 // Page head
 
 $color-page-head:                   $color-white;
-$color-page-head-background:        $color-brand;
+$color-page-head-background:        linear-gradient(to right, #2d599e 0%, #3d93e2 100%);
 
 
 
@@ -44,7 +49,7 @@ $color-page-head-background:        $color-brand;
 
 // Notebook
 
-$color-notebook-border:             $color-anti-flash-white;
+$color-notebook-border:             $color-border;
 
 
 
@@ -52,7 +57,7 @@ $color-notebook-border:             $color-anti-flash-white;
 
 // Links
 
-$color-links:                       $color-brand;
+$color-links:                       $color-blue-sapphire;
 $color-links-hover:                 $color-text;
 
 
@@ -61,7 +66,7 @@ $color-links-hover:                 $color-text;
 
 // Date
 
-$color-date:                        $color-pastel-gray;
+$color-date:                        $color-sonic-silver;
 
 
 
@@ -74,7 +79,7 @@ $color-btn-primary-background:      $color-brand;
 $color-btn-primary-hover:           $color-text;
 
 $color-btn-secondary:               $color-white;
-$color-btn-secondary-background:    $color-pastel-gray;
+$color-btn-secondary-background:    $color-platinum;
 $color-btn-secondary-hover:         $color-text;
 
 
@@ -83,7 +88,7 @@ $color-btn-secondary-hover:         $color-text;
 
 // Social media
 
-$color-social-media:                $color-pastel-gray;
+$color-social-media:                $color-sonic-silver;
 $color-social-media-hover:          $color-text;
 
 
@@ -100,8 +105,7 @@ $color-page-foot:                   $color-text;
 
 // Bookcase
 
-$color-bookcase:                    $color-text;
-$color-bookcase-border:             $color-anti-flash-white;
+$color-bookcase-border:             $color-border;
 
 
 
@@ -109,8 +113,9 @@ $color-bookcase-border:             $color-anti-flash-white;
 
 // Book
 
-$color-book-background:             $color-anti-flash-white;
-$color-book-hover:                  darken($color-anti-flash-white, 10%);
+$color-book:                        $color-sonic-silver;
+$color-book-headline:               $color-text;
+$color-book-background:             $color-snow;
 
 
 
@@ -118,7 +123,7 @@ $color-book-hover:                  darken($color-anti-flash-white, 10%);
 
 // Page content
 
-$color-page-content-border:         $color-anti-flash-white;
+$color-page-content-border:         $color-border;
 
 
 
@@ -126,7 +131,7 @@ $color-page-content-border:         $color-anti-flash-white;
 
 // Post
 
-$color-post-border:                 $color-anti-flash-white;
+$color-post-border:                 $color-border;
 
 
 
@@ -134,7 +139,8 @@ $color-post-border:                 $color-anti-flash-white;
 
 // Book details
 
-$color-book-details-background:     $color-anti-flash-white;
+$color-book-details-background:     $color-ghost-white;
+$color-book-details-border:         $color-celestial-blue;
 
 
 
@@ -142,7 +148,7 @@ $color-book-details-background:     $color-anti-flash-white;
 
 // Author
 
-$color-author-background:           $color-anti-flash-white;
+$color-author-background:           $color-snow;
 
 
 
@@ -150,7 +156,7 @@ $color-author-background:           $color-anti-flash-white;
 
 // Rating
 
-$color-rating:                      $color-princeton-orange;
+$color-rating:                      $color-celestial-blue;
 
 
 
@@ -158,7 +164,7 @@ $color-rating:                      $color-princeton-orange;
 
 // Project
 
-$color-project-background:          $color-anti-flash-white;
+$color-project-background:          $color-snow;
 
 
 
@@ -166,4 +172,4 @@ $color-project-background:          $color-anti-flash-white;
 
 // Portfolio
 
-$color-portfolio-border:            $color-anti-flash-white;
+$color-portfolio-border:            $color-border;

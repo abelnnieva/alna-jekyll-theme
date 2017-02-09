@@ -3,29 +3,27 @@
    ========================================================================== */
 
 .c-book {
-
+  text-align: center;
 }
 
 
   .c-book__link {
-    color: $color-bookcase;
+    color: $color-book;
+    display: block;
+    padding: $unit-small;
 
     &:hover,
     &:focus {
-      .c-book__cover {
-        background: $color-book-hover;
-      }
+      color: $color-book;
+      background: $color-book-background;
     }
   }
 
 
   .c-book__cover {
-    background: $color-book-background;
     box-sizing: content-box;
-    margin-bottom: $unit-tiny;
+    margin-bottom: $unit-small;
     max-height: 200px;
-    padding: $unit-small 0;
-    text-align: center;
 
     img {
       max-height: inherit;
@@ -34,6 +32,7 @@
 
 
   .c-book__headline {
+    color: $color-book-headline;
     margin: $unit-tiny 0;
   }
 

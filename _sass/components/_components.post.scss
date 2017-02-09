@@ -19,5 +19,11 @@
 
 
   .c-post__content {
+    border-bottom: 1px solid $color-post-border;
     margin-bottom: $unit-large;
+    padding-bottom: $unit-large;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
