@@ -4,11 +4,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   {% if page.title %}
-    {{ assign title = page.title | join: " &mdash; " | join: site.title }}
+    {% assign title = page.title | append: " &mdash; " | append: site.title %}
   {% else %}
-    {{ assign title = site.title | join: " &mdash; " | join: site.subtitle }}
+    {% assign title = site.title | append: " &mdash; " | append: site.subtitle %}
   {% endif %}
-  <title>{{ title | escape }}</title>
+  <title>{{ title }}</title>
 
   <!-- Prefetch DNS for external assets (Twitter widgets etc). -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -37,7 +37,7 @@
   <meta name="twitter:site" content="@{{ site.twitter_username }}">
   <meta name="twitter:domain" content="{{ '/' | absolute_url }}">
   <meta name="twitter:creator" content="@{{ site.twitter_username }}">
-  <meta name="twitter:title" content="{{ title | escape }}">
+  <meta name="twitter:title" content="{{ title }}">
 
   {% assign image = page.image | default: '/apple-touch-icon.jpg' | absolute_url %}
   <meta name="twitter:image" content="{{ image }}">
@@ -50,6 +50,6 @@
   <link rel="image_src" href="{{ image }}">
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
-  <link rel="index" title="{{ title | escape }}" href="{{ '/' | relative_url }}">
+  <link rel="index" title="{{ title }}" href="{{ '/' | relative_url }}">
 
 </head>

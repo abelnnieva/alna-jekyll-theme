@@ -7,11 +7,11 @@
 
     <ul class="o-pack  c-site-nav__list">
       {% for page in site.pages %}
-        {% if page.headline %}
+        {% if page.title %}
         <li class="o-pack__item  c-site-nav__item">
           <a class="c-site-nav__link"
              href="{{ page.url | relative_url }}"
-             itemprop="name">{{ page.headline | escape }}</a>
+             itemprop="name">{{ page.title | escape }}</a>
         </li>
         {% endif %}
       {% endfor %}
