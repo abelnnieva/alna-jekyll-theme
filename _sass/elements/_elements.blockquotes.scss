@@ -3,17 +3,17 @@
    ========================================================================== */
 
 blockquote {
-  @include font-size(20px);
+  @include font-size(20px, false);
   color: $color-blockquote;
   padding-left: $unit;
   border-left: 4px solid $color-blockquote;
   margin-left: $unit;
 
-  &:before {
+  p:first-child:before {
     content: '\201C';
   }
 
-  &:after {
+  p:last-child:after {
     content: '\201D';
   }
 
