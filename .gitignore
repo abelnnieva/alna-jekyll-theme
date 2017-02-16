@@ -6,3 +6,15 @@ Gemfile.lock
 node_modules
 .vendor
 .DS_Store
+
+
+// test files
+_site
+index.md
+books.md
+notes.md
+about.md
+projects.md
+_data
+_posts
+_config.yml

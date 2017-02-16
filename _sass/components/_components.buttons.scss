@@ -17,7 +17,7 @@
   margin: 0; /* [3] */
   cursor: pointer; /* [4] */
   padding: 0 $unit;
-  transition: $global-transition;
+  transition: color $global-transition ease-in-out;
   border-radius: $global-radius;
   font-weight: $semi-bold;
 
