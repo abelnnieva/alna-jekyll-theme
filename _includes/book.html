@@ -7,8 +7,11 @@
      href="{{ include.book.url }}">
 
     <div class="o-block__img  c-book__cover">
-      <img src="/assets/img/books/{{ include.book.slug }}.jpg"
-           itemprop="thumbnail"/>
+      <img src="{{ include.book.image }}"
+           srcset="{{ include.book.image }} 1x, {{ include.book.image2x }} 2x"
+           width="auto"
+           height="200"
+           itemprop="thumbnail">
     </div>
 
     <div class="o-block__body">

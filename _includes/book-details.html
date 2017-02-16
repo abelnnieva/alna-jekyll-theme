@@ -3,8 +3,11 @@
          itemtype="http://schema.org/Book">
 
   <div class="o-flag__img  c-book-details__cover">
-    <img src="/assets/img/books/{{ page.slug }}.jpg"
+    <img src="{{ page.image }}"
+         srcset="{{ page.image }} 1x, {{ page.image2x }} 2x"
          alt="{{ include.details.title }}"
+         width="auto"
+         height="200"
          itemprop="image">
   </div>
 
