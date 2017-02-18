@@ -5,10 +5,10 @@
   {% if page.layout == "post" %}
     <h1 itemprop="name headline">{{ include.title }}</h1>
   {% else %}
-    <h3 itemprop="name headline"
+    <h2 itemprop="name headline"
         class="u-margin-bottom-none">
       <a href="{{ include.url }}">{{ include.title }}</a>
-    </h3>
+    </h2>
 
     <link href="{{ include.url }}"
           itemprop="url" />

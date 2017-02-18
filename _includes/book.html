@@ -22,7 +22,7 @@
           itemprop="name headline">{{ include.book.title }}</h4>
 
       <p class="c-book__excerpt"
-         itemprop="description">{{ include.book.excerpt }}</p>
+         itemprop="description">{{ include.book.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 
     </div>
 

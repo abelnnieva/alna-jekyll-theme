@@ -3,11 +3,13 @@
    ========================================================================== */
 
 .c-page-content {
+  @include font-size(20px, 1.6);
   padding: $unit-large 0;
   border-bottom: 1px solid $color-page-content-border;
 
-  p {
-    line-height: 1.5;
+  @include mq($until: tablet) {
+    @include font-size(18px, 1.4);
+    padding: $unit 0;
   }
 
   h2 {
@@ -15,6 +17,11 @@
     margin: $unit-large 0 $unit-small;
     padding: $unit 0;
     text-align: center;
+
+    @include mq($until: tablet) {
+      margin: $unit-small 0 $unit-tiny;
+      padding: $unit-small 0;
+    }
   }
 }
 
@@ -22,4 +29,8 @@
   .c-page-content__headline {
     text-align: center;
     margin-bottom: $unit-large;
+
+    @include mq($until: tablet) {
+      margin-bottom: $unit;
+    }
   }
