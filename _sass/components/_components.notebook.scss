@@ -3,28 +3,53 @@
    ========================================================================== */
 
 .c-notebook {
-  padding: $unit-large 0;
   border-bottom: 1px solid $color-notebook-border;
+  padding: $unit-large 0;
+
+  @include mq($until: tablet) {
+    padding: $unit 0;
+  }
 }
 
 
   .c-notebook__headline {
     text-align: center;
     margin-bottom: $unit-large;
+
+    @include mq($until: tablet) {
+      margin-bottom: $unit;
+    }
   }
 
 
   .c-notebook__list {
-    padding-bottom: $unit;
-    margin-bottom: 0;
+    margin-bottom: $unit-large;
+
+    @include mq($until: tablet) {
+      margin-bottom: $unit;
+    }
   }
 
 
     .c-notebook__item {
-      border-bottom: 1px solid $color-notebook-border;
-      margin-top: $unit;
+      color: $color-notebook;
+      margin-bottom: $unit;
+      padding-bottom: $unit;
+
+      @include mq($until: tablet) {
+        margin-bottom: $unit-small;
+        padding-bottom: $unit-small;
+      }
 
       &:last-child {
         border-bottom: 0;
+      }
+    }
+
+    .c-notebook__excerpt {
+      margin-bottom: 0;
+
+      @include mq($until: tablet) {
+        display: none;
       }
     }

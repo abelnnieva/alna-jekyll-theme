@@ -80,10 +80,7 @@
 // SETTINGS
 // @import "settings/example.settings.config";
 
-$inuit-global-font-size:    18px;
-$inuit-global-line-height:  24px;
 @import "../node_modules/inuitcss/settings/settings.core";
-
 @import "settings/settings.global";
 @import "settings/settings.colors";
 
@@ -117,12 +114,12 @@ $inuit-global-line-height:  24px;
 @import "../node_modules/inuitcss/elements/elements.page";
 @import "elements/elements.page";
 
-$inuit-font-size-h1:  34px;
+$inuit-font-size-h1:  36px;
 $inuit-font-size-h2:  30px;
 $inuit-font-size-h3:  26px;
-$inuit-font-size-h4:  20px;
-$inuit-font-size-h5:  16px;
-$inuit-font-size-h6:  14px;
+$inuit-font-size-h4:  22px;
+$inuit-font-size-h5:  20px;
+$inuit-font-size-h6:  18px;
 @import "../node_modules/inuitcss/elements/elements.headings";
 
 @import "elements/elements.headings";
@@ -131,6 +128,7 @@ $inuit-font-size-h6:  14px;
 @import "elements/elements.links";
 @import "elements/elements.descriptions";
 @import "elements/elements.blockquotes";
+@import "elements/elements.code";
 
 
 
@@ -181,6 +179,7 @@ $inuit-wrapper-width: 800px;
 @import "components/components.rating";
 @import "components/components.portfolio";
 @import "components/components.project";
+@import "components/components.highlight";
 
 
 
