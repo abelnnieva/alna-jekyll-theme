@@ -3,18 +3,32 @@
    ========================================================================== */
 
 blockquote {
-  @include font-size(20px, false);
-  color: $color-blockquote;
-  padding-left: $unit;
+  @include font-size(18px, false);
+  @extend .c-icon--quotes-left;
   border-left: 4px solid $color-blockquote;
-  margin-left: $unit;
+  font-style: italic;
+  margin-top: 40px;
+  padding: $unit-small $unit-large;
+  position: relative;
 
-  p:first-child:before {
-    content: '\201C';
+  @include mq($until: tablet) {
+    @include font-size(16px, false);
+    padding: $unit-tiny $unit;
   }
 
-  p:last-child:after {
-    content: '\201D';
+  &:before {
+    @extend .c-icon;
+    @include font-size(16px, false);
+    background: $color-blockquote;
+    border-radius: 50%;
+    color: $color-blockquote-icon;
+    height: 32px;
+    left: -18px;
+    line-height: 32px!important;
+    position: absolute;
+    text-align: center;
+    top: -16px;
+    width: 32px;
   }
 
 }

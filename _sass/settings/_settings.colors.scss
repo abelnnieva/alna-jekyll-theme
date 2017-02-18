@@ -48,7 +48,9 @@ $color-page-head-background:        linear-gradient(to right, $color-cyan-cobalt
 
 // Notebook
 
+$color-notebook:                    $color-sonic-silver;
 $color-notebook-border:             $color-border;
+$color-notebook-hover:              $color-bleu-de-france;
 
 
 
@@ -56,8 +58,8 @@ $color-notebook-border:             $color-border;
 
 // Links
 
-$color-links:                       $color-cyan-cobalt-blue;
-$color-links-hover:                 $color-text;
+$color-links:                       $color-brand;
+$color-links-hover:                 $color-bleu-de-france;
 
 
 
@@ -75,7 +77,7 @@ $color-date:                        $color-sonic-silver;
 
 $color-btn-primary:                 $color-white;
 $color-btn-primary-background:      $color-brand;
-$color-btn-primary-hover:           $color-text;
+$color-btn-primary-hover:           $color-bleu-de-france;
 
 $color-btn-secondary:               $color-white;
 $color-btn-secondary-background:    $color-sonic-silver;
@@ -139,7 +141,8 @@ $color-post-border:                 $color-border;
 // Book details
 
 $color-book-details-background:     $color-ghost-white;
-$color-book-details-border:         $color-bleu-de-france;
+$color-book-details-border:         $color-brand;
+$color-book-details-icon:           $color-white;
 
 
 
@@ -180,3 +183,26 @@ $color-portfolio-border:            $color-border;
 // Blockquote
 
 $color-blockquote:                  $color-brand;
+$color-blockquote-icon:             $color-white;
+
+
+
+
+
+// highlight
+
+$color-highlight:                         $color-brand;
+$color-highlight-icon:                    $color-white;
+$color-highlight-onyx:                  #383a42;
+$color-highlight-quick-silver:          #a0a1a7;
+$color-highlight-jelly-bean:            #e05252;
+$color-highlight-byzantine:             #a626a4;
+$color-highlight-middle-green:          #50a14f;
+$color-highlight-gamboge-orange-brown:  #986801;
+$color-highlight-dark-goldenrod:        #c18401;
+$color-highlight-blue-ncs:              #0184bc;
+$color-highlight-carmine-pink:          #e45649;
+$color-highlight-white-smoke:           #f8f8f2;
+$color-highlight-nickel:                #75715e;
+$color-highlight-ocean-green:           #43d08a;
+$color-highlight-white:                   $color-white;

@@ -4,9 +4,15 @@
 
 .c-book-details {
   background: $color-book-details-background;
-  padding: $unit;
   margin-bottom: $unit-large;
-  border-left: 4px solid $color-book-details-border;
+  padding: $unit;
+  position: relative;
+
+  @include mq($until: tablet) {
+    margin-bottom: $unit;
+    padding: $unit-small;
+    text-align: center;
+  }
 
   small {
     display: block;
@@ -16,9 +22,17 @@
 
   .c-book-details__cover {
     @include mq($until: tablet) {
-      display: block;
+      display: inline-table;
       float: none;
       margin: 0 auto $unit;
+      padding-right: 0;
+    }
+  }
+
+
+  .c-book-details__body {
+    @include mq($until: tablet) {
+      display: block;
     }
   }
 

@@ -14,7 +14,9 @@
 
   .c-author__photo {
     @include mq($until: tablet) {
+      display: inline-table;
       padding-right: 0;
+      margin-bottom: $unit;
     }
 
     img {
@@ -24,8 +26,11 @@
 
 
   .c-author__bio {
+    @include font-size(18px);
+
     @include mq($until: tablet) {
-      display: none;
+      @include font-size(16px);
+      display: block;
     }
 
     a {

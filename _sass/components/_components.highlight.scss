@@ -1,0 +1,113 @@
+/* ==========================================================================
+   #HIGHLIGHT
+   ========================================================================== */
+
+/**
+ * Syntax highlighting styles
+ */
+
+.highlight {
+  @include font-size(18px, false);
+  @extend .c-icon--embed;
+  border-left: 4px solid $color-highlight;
+  margin-top: 40px;
+  position: relative;
+
+  @include mq($until: tablet) {
+    @include font-size(16px, false);
+  }
+
+  &:before {
+    @extend .c-icon;
+    @include font-size(16px, false);
+    background: $color-highlight;
+    border-radius: 50%;
+    color: $color-highlight-icon;
+    height: 32px;
+    left: -18px;
+    line-height: 32px!important;
+    position: absolute;
+    text-align: center;
+    top: -16px;
+    width: 32px;
+  }
+
+  pre {
+    margin-bottom: 0;
+  }
+
+  code {
+    padding: $unit-small $unit-large;
+
+    @include mq($until: tablet) {
+      padding: $unit-tiny $unit;
+    }
+  }
+
+  &, .n, .o, .p, .nf, .nn, .nx {
+    color: $color-highlight-onyx;
+  }
+
+  .err {
+    color: $color-highlight-white;
+    background-color: $color-highlight-jelly-bean;
+  }
+
+  .k {
+    color: $color-highlight-byzantine;
+  }
+
+  .l, .ld, .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .s1 {
+    color: $color-highlight-middle-green;
+  }
+
+  .c, .cm, .cp, .c1, .cs {
+    color: $color-highlight-quick-silver;
+    font-style: italic;
+  }
+
+  .ge {
+    font-style: italic;
+  }
+
+  .gs, .ow {
+    font-weight: bold;
+  }
+
+  .kc, .kd, .kn, .kp, .kr, .kt {
+    color: $color-highlight-byzantine;
+  }
+
+  .m, .na, .mf, .mh, .mi, .mo, .il {
+    color: $color-highlight-gamboge-orange-brown;
+  }
+
+  .nb, .nc, .no, .nd, .ni, .ne, .nl, .py, .nv, .bp, .vc, .vg {
+    color: $color-highlight-dark-goldenrod;
+  }
+
+  .sr, .ss, .language-json .kc {
+    color: $color-highlight-blue-ncs;
+  }
+
+  .nt, .vi, .language-json .w + .s2 {
+    color: $color-highlight-carmine-pink;
+  }
+
+  .w {
+    color: $color-highlight-white-smoke;
+  }
+
+  .gu {
+    color: $color-highlight-nickel;
+  }
+
+  .gd {
+    color: $color-highlight-jelly-bean;
+  }
+
+  .gi {
+    color: $color-highlight-ocean-green;
+  }
+
+}

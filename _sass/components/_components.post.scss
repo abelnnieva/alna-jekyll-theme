@@ -6,8 +6,8 @@
   padding: $unit-large 0;
   border-bottom: 1px solid $color-post-border;
 
-  p {
-    line-height: 1.5;
+  @include mq($until: tablet) {
+    padding: $unit 0;
   }
 
   h2 {
@@ -23,9 +23,16 @@
 
 
   .c-post__content {
+    @include font-size(20px, 1.6);
     border-bottom: 1px solid $color-post-border;
     margin-bottom: $unit-large;
     padding-bottom: $unit-large;
+
+    @include mq($until: tablet) {
+      @include font-size(18px, 1.4);
+      margin-bottom: $unit;
+      padding-bottom: $unit;
+    }
 
     p:last-child {
       margin-bottom: 0;

@@ -5,12 +5,20 @@
 .c-bookcase {
   padding: $unit-large 0;
   border-bottom: 1px solid $color-bookcase-border;
+
+  @include mq($until: tablet) {
+    padding: $unit 0;
+  }
 }
 
 
   .c-bookcase__headline {
     text-align: center;
     margin-bottom: $unit-large;
+
+    @include mq($until: tablet) {
+      margin-bottom: $unit;
+    }
   }
 
 

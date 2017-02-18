@@ -2,7 +2,50 @@
    #HEADINGS
    ========================================================================== */
 
+$mq-font-size-h1: 30px !default;
+$mq-font-size-h2: 24px !default;
+$mq-font-size-h3: 22px !default;
+$mq-font-size-h4: 20px !default;
+$mq-font-size-h5: 18px !default;
+$mq-font-size-h6: 16px !default;
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-font-family;
   font-weight: $regular;
+  line-height: normal;
+}
+
+h1 {
+  @include mq($until: tablet) {
+    @include font-size($mq-font-size-h1, false);
+  }
+}
+
+h2 {
+  @include mq($until: tablet) {
+    @include font-size($mq-font-size-h2, false);
+  }
+}
+
+h3 {
+  @include mq($until: tablet) {
+    @include font-size($mq-font-size-h3, false);
+  }
+}
+
+h4 {
+  @include mq($until: tablet) {
+    @include font-size($mq-font-size-h4, false);
+  }
+}
+
+h5 {
+  @include mq($until: tablet) {
+    @include font-size($mq-font-size-h5, false);
+  }
+}
+
+h6 {
+  @include mq($until: tablet) {
+    @include font-size($mq-font-size-h6, false);
+  }
 }

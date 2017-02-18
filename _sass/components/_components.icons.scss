@@ -43,32 +43,24 @@
   content: "\ea90";
 }
 
-.c-icon--instagram:before {
-  content: "\ea92";
-}
-
 .c-icon--twitter:before {
   content: "\ea96";
-}
-
-.c-icon--youtube:before {
-  content: "\ea9d";
 }
 
 .c-icon--github:before {
   content: "\eab0";
 }
 
-.c-icon--soundcloud:before {
-  content: "\eac3";
-}
-
 .c-icon--linkedin:before {
   content: "\eaca";
 }
 
-.c-icon--envelop:before {
-  content: "\e945";
+.c-icon--book:before {
+  content: "\e91f";
+}
+
+.c-icon--quotes-left:before {
+  content: "\e977";
 }
 
 .c-icon--star-empty:before {
@@ -77,4 +69,8 @@
 
 .c-icon--star-full:before {
   content: "\e9d9";
+}
+
+.c-icon--embed:before {
+  content: "\ea7f";
 }

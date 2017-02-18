@@ -6,4 +6,8 @@
   background: $color-page-head-background;
   color: $color-page-head;
   padding: $unit-large 0;
+
+  @include mq($until: tablet) {
+    padding: $unit 0;
+  }
 }

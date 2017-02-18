@@ -1,13 +1,9 @@
 /* ==========================================================================
-   #POST-HEAD
+   #CODE
    ========================================================================== */
 
-.c-post-head {
-  h1 {
-    margin-bottom: $unit-large;
-
-    @include mq($until: tablet) {
-      margin-bottom: $unit;
-    }
-  }
+code, kbd, samp {
+  display: block;
+  font-family: $code-font-family;
+  overflow-y: scroll;
 }

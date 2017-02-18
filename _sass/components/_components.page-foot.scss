@@ -7,6 +7,10 @@
   color: $color-page-foot;
   padding: $unit-large 0;
   text-align: center;
+
+  @include mq($until: tablet) {
+    padding: $unit 0;
+  }
 }
 
 
