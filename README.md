@@ -74,34 +74,6 @@ If you'd like to change the theme's HTML layout:
 3. Paste the default layout content copied in the first step
 4. Customize the layout as you'd like
 
-### Content
-
-ALNA Jekyll theme offer different components to customized content and structure of your site. For example, you can create the `index.md` with the `notebook.html` component:
-
-```yml
----
-layout: default
----
-
-{% include notebook.html title="Recents posts" limit=3 permalink="/posts/" see-more="More" %}
-```
-
-You can also creat the `posts.md` white the `notebook.html` without a limited listing of posts:
-
-
-```yml
----
-layout: page
-title: Posts
-permalink: /posts/
-custom-content: true
----
-
-{% include notebook.html title=page.title %}
-```
-
-You will find all the components available in `_include` folder.
-
 ### Enabling comments (via Disqus)
 
 Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
