@@ -1,6 +1,6 @@
 {
   "name": "alna-jekyll-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Abel Nieva website theme for Jekyll built with inuitcss",
   "main": "gulpfile.babel.js",
   "scripts": {
