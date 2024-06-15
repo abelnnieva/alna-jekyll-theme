@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/abel-nieva/alna-jekyll-theme.svg?branch=master)](https://travis-ci.org/abel-nieva/alna-jekyll-theme) [![Gem Version](https://badge.fury.io/rb/alna-jekyll-theme.svg)](https://badge.fury.io/rb/alna-jekyll-theme)
 
-Abel Nieva website theme for Jekyll built with inuitcss. You can [preview the theme to see what it looks like](https://abelnieva.com), or even [use it today](#usage).
+Abel Nieva website theme for Jekyll built with inuitcss. You can [preview the theme to see what it looks like](https://abelnnieva.github.io/book-review-website/), or even [use it today](#usage).
 
 ![Screenshot of alna-jekyll-theme](screenshot.png)
 
